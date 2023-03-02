@@ -1,3 +1,5 @@
+package Guia;
+
 import java.util.Scanner;
 
 

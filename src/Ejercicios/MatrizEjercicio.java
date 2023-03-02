@@ -1,3 +1,5 @@
+package Ejercicios;
+
 import java.util.Scanner;
 public class MatrizEjercicio {
     public static void main(String[] args) {

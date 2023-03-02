@@ -1,8 +1,11 @@
+package Ejercicios;
 
+import Guia.EditorTexto;
+import Guia.Evento;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
         LinkedList linkedList = new LinkedList();
         linkedList.agregarInicio(61);
         linkedList.agregarFinal(30);
@@ -48,7 +51,8 @@ public class Main {
         linkedList.eliminarPorPosicion(3);
 
         System.out.println("Después de eliminar");
-        linkedList.recorrer();
+        linkedList.recorrer();*/
+
 
     }
 }
