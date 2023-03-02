@@ -60,8 +60,8 @@ public class QueueEjercicio {
 
 
     public static void main(String[] args) {
-        QueueEjercicio q = new QueueEjercicio();
-        q.actions();
+        QueueEjercicio queue = new QueueEjercicio();
+        queue.actions();
     }
 
 }
