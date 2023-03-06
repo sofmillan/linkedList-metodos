@@ -29,7 +29,7 @@ public class StackEjercicio {
         while(option=='1'){
             if(users.isEmpty()){
                 System.out.println("There are no users");
-                break;
+                connectUsers();
             }else{
                 users.pop();
                 printUsers();
@@ -37,7 +37,6 @@ public class StackEjercicio {
             System.out.println("Do you wanna disconnect users  1.yes  2.no");
              option = scan.next().charAt(0);
         }
-
     }
 
     public void printUsers(){

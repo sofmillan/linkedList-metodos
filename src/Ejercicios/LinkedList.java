@@ -1,3 +1,5 @@
+package Ejercicios;
+
 public class LinkedList {
 
     class Node {
@@ -108,7 +110,7 @@ public class LinkedList {
         if (posicion < 0) {
             throw new IndexOutOfBoundsException();
         } else if (posicion == 0) {
-           eliminarInicio();
+            eliminarInicio();
         } else {
             for (int i = 0; i < posicion-1 ; i++){
                 if(actual==null){
