@@ -1,4 +1,4 @@
-package Ejercicios;
+package EjerciciosLogica;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -19,43 +19,37 @@ public class HashMapSesion {
         data.put("esteban1","18ff");
         data.put("matt","90k");
 
-        int intentos = 4;
-        while(intentos>0){
+        int attempts  = 4;
+        while(attempts >0){
 
-            System.out.println("Ingrese su usuario");
+            System.out.println("Enter your username");
             String username = scan.nextLine();
 
-            System.out.println("Ingrese su contraseña");
+            System.out.println("Enter your password");
             String password = scan.nextLine();
 
             HashMap<String, String> search = new HashMap<>();
             search.put(username,password);
 
-            if(ifcontains(data,search)){
-                System.out.println("Ha accedido, aceptado");
-                intentos=4;
+            if(contains(data,search)){
+                System.out.println("Accepted, you have access");
+                attempts =4;
                 break;
             }else{
-                intentos--;
-                System.out.println("Datos incorrectos");
-                System.out.println(intentos+" intentos restantes");
+                attempts --;
+                System.out.println("Your login information was incorrect.");
+                System.out.println(attempts +" remaining.");
 
             }
         }
-        if(intentos==0){
-            System.out.println("Lo siento, no tiene acceso al área restringida");
+        if(attempts==0){
+            System.out.println("Sorry, you do not have access to restricted areas.");
 
         }
 
-
-
-      /*  HashMap<String, String> data = new HashMap<>(data());
-        HashMap<String, String> search = new HashMap<>(info());*/
-     //   ifContains(data,search);
-
     }
 
-    public static boolean ifcontains(HashMap<String, String> data, HashMap<String, String> search){
+    public static boolean contains(HashMap<String, String> data, HashMap<String, String> search){
         for(String key:data.keySet()){
             if(search.containsKey(key) && search.get(key).equals(data.get(key))){
                 return true;
